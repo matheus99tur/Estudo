@@ -1,0 +1,34 @@
+### Testar a raiz do projeto
+GET  http://localhost:5030
+
+
+### Listar Todas as Tarefas
+GET  http://localhost:5030/api/tarefas/listar
+
+
+### Buscar uma tarefa pelo id
+GET  http://localhost:5030/api/tarefas/buscar2
+
+
+### Deletar uma tarefa pelo id
+DELETE   http://localhost:5030/api/tarefas/deletar/4
+
+
+
+### Cadastrar Tarefa
+
+POST  http://localhost:5030/api/tarefas/cadastrar
+Content-Type: application/json
+
+{
+  "nome": "Estudar para prova"
+}
+
+### Alterar Tarefa
+
+PUT   http://localhost:5030/api/tarefas/alterar/3
+Content-Type: application/json
+
+{
+  "nome": "Lembrar de estudar"
+}
